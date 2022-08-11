@@ -39,7 +39,9 @@ class _MyhomeState extends State<Myhome> {
         backgroundColor: Colors.black,
       // appBar: AppBar,
       bottomNavigationBar: CurvedNavigationBar(
-        color: Colors.black26, // nav bar color
+        color: Colors.white,
+        // \nav bar color
+        // color: Color.fromRGBO(196, 135, 198, 1))
         backgroundColor: Colors.transparent,
         items: items,
         index: index,

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -30,17 +29,17 @@ Wellness care for pets is an important piece of the pet care puzzle. Making sure
         centerTitle: true,
         // ignore: prefer_const_constructors
         title: const Text(
-            'PetO',
+            'Peto',
             style: TextStyle(
               fontSize: 30,
-              color: Colors.white,
+              color: Colors.purple,
 
             )
 
         ),
-        backgroundColor: Colors.white38,
+        backgroundColor: Colors.white,
       ),
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Color.fromRGBO(196, 135, 198, 1),
       body: Container(
           child: SafeArea(
             child:ListView(
@@ -69,13 +68,13 @@ Wellness care for pets is an important piece of the pet care puzzle. Making sure
                       )
                     ),
                     child: Text(
-                        "Know your Pet",
+                        "Know Your Pet",
                       textAlign: TextAlign.center,
                       style: GoogleFonts.dancingScript(
                         fontSize: 40,
                         height: 3,
                         fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic,
+                        // fontStyle: FontStyle.italic,
                       )
                     ),
                   )
@@ -132,13 +131,13 @@ Wellness care for pets is an important piece of the pet care puzzle. Making sure
                       )
                     ),
                     child: Text(
-                        "Groom your Pet",
+                        "Groom Your Pet",
                       textAlign: TextAlign.center,
                       style: GoogleFonts.dancingScript(
                         fontSize: 40,
                         height: 3,
                         fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic,
+                        // fontStyle: FontStyle.italic,
                       )
                     ),
                   )
@@ -165,7 +164,7 @@ Wellness care for pets is an important piece of the pet care puzzle. Making sure
                           fontSize: 18,
                           height: 1.5,
                           fontWeight: FontWeight.bold,
-                          fontStyle: FontStyle.italic,
+                          // fontStyle: FontStyle.italic,
                         )
                         ),
                   ),

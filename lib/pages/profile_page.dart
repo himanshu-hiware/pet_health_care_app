@@ -1,3 +1,6 @@
+import 'dart:ui';
+
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +12,7 @@ class Myprofile extends StatefulWidget {
 }
 
 class _MyprofileState extends State<Myprofile> {
+  final User = FirebaseAuth.instance.currentUser!;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,17 +20,17 @@ class _MyprofileState extends State<Myprofile> {
         centerTitle: true,
         // ignore: prefer_const_constructors
         title: const Text(
-            'PetO',
+            'Peto',
             style: TextStyle(
               fontSize: 30,
-              color: Colors.white,
+              color: Colors.purple,
 
             )
 
         ),
-        backgroundColor: Colors.white38,
+        backgroundColor: Colors.white,
       ),
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Color.fromRGBO(196, 135, 198, 1),
       body: SafeArea(
           child: Column(
             children: [
@@ -38,7 +42,7 @@ class _MyprofileState extends State<Myprofile> {
               SizedBox(
                 height: 5,
               ),
-              _profileName("Raj Jani"),
+              _profileName("Welcome"),
               SizedBox(
                 height: 10,
               ),
@@ -77,12 +81,12 @@ class _MyprofileState extends State<Myprofile> {
             height: 100,
             width: 100,
             decoration: BoxDecoration(
-              //borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                shape: BoxShape.circle,
+              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                shape: BoxShape.rectangle,
                 image: DecorationImage(
                     fit: BoxFit.fill,
                     image: AssetImage(
-                        "assets/avatar.png"))
+                        "assets/blank-profile-picture.png"))
               // color: Colors.orange[100],
             ),
           ),
@@ -130,7 +134,7 @@ class _MyprofileState extends State<Myprofile> {
             //row for each deatails
             ListTile(
               leading: Icon(Icons.email),
-              title: Text("Something@gmail.com"),
+              title: Text(User.email!),
             ),
             Divider(
               height: 0.6,
@@ -186,7 +190,9 @@ class _MyprofileState extends State<Myprofile> {
 
   Widget logoutButton() {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        FirebaseAuth.instance.signOut();
+      },
       child: Container(
           width: 150,
           color: Colors.white,

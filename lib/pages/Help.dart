@@ -48,9 +48,11 @@ class _help_petssState extends State<help_petss> {
         Step(
           state: _activeStepIndex <= 0 ? StepState.editing : StepState.complete,
           isActive: _activeStepIndex >= 0,
+
           title: const Text('Emergency'),
 
           content: Container(
+
             child: Column(
               children: [
                 const SizedBox(
@@ -116,8 +118,8 @@ class _help_petssState extends State<help_petss> {
                       onClick:()=> getImage(ImageSource.gallery),
 
                     ),
-                  CustomButton
-                    (
+                  CustomButton(
+
                     title: 'Camera',
                     icon: Icons.camera,
                       onClick:()=> getImage(ImageSource.camera),
@@ -162,7 +164,7 @@ class _help_petssState extends State<help_petss> {
         centerTitle: true,
         // ignore: prefer_const_constructors
         title: const Text(
-            'PetO',
+            'Peto',
             style: TextStyle(
               fontSize: 30,
               color: Colors.white,
@@ -170,7 +172,7 @@ class _help_petssState extends State<help_petss> {
             )
 
         ),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Color.fromRGBO(196, 135, 198, 1),
       ),
 
       body: Stepper(
@@ -207,6 +209,9 @@ class _help_petssState extends State<help_petss> {
                 Expanded(
                   child: ElevatedButton(
                     onPressed: controls.onStepContinue,
+                    style: ElevatedButton.styleFrom(
+                      primary: Color.fromRGBO(49, 39, 79, 1), // Background color
+                    ),
                     child: (isLastStep)
                         ? const Text('Submit')
                         : const Text('Next'),
@@ -218,6 +223,9 @@ class _help_petssState extends State<help_petss> {
                 if (_activeStepIndex > 0)
                   Expanded(
                     child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(49, 39, 79, 1), // Background color
+                      ),
                       onPressed: controls.onStepCancel,
                       child: const Text('Back'),
                     ),
@@ -238,6 +246,7 @@ Widget CustomButton({
   return Container(
     width: 150,
     child: ElevatedButton(
+      style: ElevatedButton.styleFrom( primary: Color.fromRGBO(49, 39, 79, 1),),
       onPressed: onClick,
       child: Row(
         children:  [
