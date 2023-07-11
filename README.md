@@ -4,7 +4,7 @@
 This Flutter application serves as a comprehensive resource for pet owners, providing valuable information about pet health care and articles on various pet-related topics. Additionally, it incorporates an emergency help system to assist stray animals in need. The application utilizes Flutter and Firebase technologies to deliver a seamless user experience.
 A new Flutter project.
 
-## Getting Started
+## app preview
 
 <img src="https://user-images.githubusercontent.com/91529311/187669260-4aa40c09-82b6-4609-98dd-9572324ff4bb.jpg" width="250" height="500"><img src="https://user-images.githubusercontent.com/91529311/187669275-88aa0fcb-675d-4ede-b952-8adfc410c9f9.jpg" width="250" height="500"> <img src="https://user-images.githubusercontent.com/91529311/187669349-20bf879e-2ae1-49d7-ba6e-13d87b80ce1f.jpg" width="250" height="500">   <img src="https://user-images.githubusercontent.com/91529311/187669540-a1df3664-18a7-44d3-926b-4aa90ca6019c.jpg" width="250" height="500"> <img src="https://user-images.githubusercontent.com/91529311/187669559-34a4b3c4-222e-4f93-aadf-81cca4c1160d.jpg" width="250" height="500"> <img src="https://user-images.githubusercontent.com/91529311/187669593-3224e380-96a7-4665-b7e7-ba0a44ce4712.jpg" width="250" height="500"> <img src="https://i.imgur.com/jhAywcj.jpg" width="250" height="500"> <img src="https://i.imgur.com/gkPpM0W.jpg" width="250" height="500"> <img src="https://i.imgur.com/dsUO7xX.jpg" width="250" height="500"> <img src="https://i.imgur.com/DXZ9tqU.jpg" width="250" height="500"> <img src="https://i.imgur.com/f6R6vG2.jpg" width="250" height="500"> 
 
