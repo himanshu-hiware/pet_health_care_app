@@ -2,7 +2,7 @@
 ## Pet Health Care and Articles Information
 
 This Flutter application serves as a comprehensive resource for pet owners, providing valuable information about pet health care and articles on various pet-related topics. Additionally, it incorporates an emergency help system to assist stray animals in need. The application utilizes Flutter and Firebase technologies to deliver a seamless user experience.
-A new Flutter project.
+
 
 ## app preview
 
